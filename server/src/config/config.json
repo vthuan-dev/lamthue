@@ -1,12 +1,11 @@
 {
   "development": {
-    "username": "root",
-    "password": "CmcxpBTQwDhHRCnCiJiiUIQegmnxcUJU",
-    "database": "phong_tro",
-    "host": "autorack.proxy.rlwy.net",
-    "port": "34147",
+    "username": "u5gu3ekme9kr6gr0",
+    "password": "KUUlnJFWD1b2TgSNCLlQ",
+    "database": "bxrz7bfjvkkcertvcbae",
+    "host": "bxrz7bfjvkkcertvcbae-mysql.services.clever-cloud.com",
+    "port": "3306",
     "dialect": "mysql",
-    "logging": false,
     "dialectOptions": {
       "ssl": {
         "require": true,
@@ -14,20 +13,18 @@
       }
     }
   },
-  "test": {
-    "username": "root",
-    "password": "CmcxpBTQwDhHRCnCiJiiUIQegmnxcUJU",
-    "database": "phong_tro",
-    "host": "autorack.proxy.rlwy.net",
-    "port": "34147",
-    "dialect": "mysql"
-  },
   "production": {
-    "username": "root",
-    "password": "CmcxpBTQwDhHRCnCiJiiUIQegmnxcUJU",
-    "database": "phong_tro",
-    "host": "autorack.proxy.rlwy.net",
-    "port": "34147",
-    "dialect": "mysql"
+    "username": "u5gu3ekme9kr6gr0",
+    "password": "KUUlnJFWD1b2TgSNCLlQ",
+    "database": "bxrz7bfjvkkcertvcbae",
+    "host": "bxrz7bfjvkkcertvcbae-mysql.services.clever-cloud.com",
+    "port": "3306",
+    "dialect": "mysql",
+    "dialectOptions": {
+      "ssl": {
+        "require": true,
+        "rejectUnauthorized": false
+      }
+    }
   }
 }

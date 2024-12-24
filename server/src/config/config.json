@@ -1,0 +1,33 @@
+{
+  "development": {
+    "username": "root",
+    "password": "CmcxpBTQwDhHRCnCiJiiUIQegmnxcUJU",
+    "database": "phong_tro",
+    "host": "autorack.proxy.rlwy.net",
+    "port": "34147",
+    "dialect": "mysql",
+    "logging": false,
+    "dialectOptions": {
+      "ssl": {
+        "require": true,
+        "rejectUnauthorized": false
+      }
+    }
+  },
+  "test": {
+    "username": "root",
+    "password": "CmcxpBTQwDhHRCnCiJiiUIQegmnxcUJU",
+    "database": "phong_tro",
+    "host": "autorack.proxy.rlwy.net",
+    "port": "34147",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "root",
+    "password": "CmcxpBTQwDhHRCnCiJiiUIQegmnxcUJU",
+    "database": "phong_tro",
+    "host": "autorack.proxy.rlwy.net",
+    "port": "34147",
+    "dialect": "mysql"
+  }
+}

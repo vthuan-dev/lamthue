@@ -48,7 +48,7 @@ const DetailPost = () => {
             </div>
             <div className="flex items-center gap-2">
               <HiOutlineLocationMarker color="#2563eb" />
-              <span>{posts[0].address}</span>
+              <span>{posts[0]?.address}</span>
             </div>
             <div className="flex items-center justify-between">
               <span className="flex items-center gap-1">
@@ -71,15 +71,12 @@ const DetailPost = () => {
               </span>
             </div>
           </div>
-          {/* <div className="mt-8">
+          <div className="mt-8">
             <h3 className="my-4 text-xl font-semibold">Thông tin mô tả</h3>
             <div className="flex flex-col gap-3">
-              {posts[0]?.description &&
-                JSON.parse(posts[0]?.description)?.map((item, index) => {
-                  return <span key={index}>{item}</span>;
-                })}
+              {posts[0]?.description }
             </div>
-          </div> */}
+          </div>
           <div className="mt-8">
             <h3 className="my-4 text-xl font-semibold">Đặc điểm tin đăng</h3>
             <table className="w-full">

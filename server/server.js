@@ -35,13 +35,20 @@ app.use((req, res, next) => {
   console.log('Request URL:', req.url);
   console.log('Request Method:', req.method);
   console.log('Request Headers:', req.headers);
+  console.log('Request Body:', req.body);
   next();
+});
+
+app.use((err, req, res, next) => {
+  console.error('Error:', err);
+  res.status(500).json({ error: 'Internal Server Error' });
 });
 
 initRoutes(app);
 connectDatabase();
 
-const port = process.env.PORT || 8888;
+const port = process.env.PORT || 3000;
 const listener = app.listen(port, () => {
   console.log(`Server is running on the port ${listener.address().port}`);
 });
+Y

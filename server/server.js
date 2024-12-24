@@ -31,6 +31,13 @@ app.use((req, res, next) => {
     next();
 });
 
+app.use((req, res, next) => {
+  console.log('Request URL:', req.url);
+  console.log('Request Method:', req.method);
+  console.log('Request Headers:', req.headers);
+  next();
+});
+
 initRoutes(app);
 connectDatabase();
 
